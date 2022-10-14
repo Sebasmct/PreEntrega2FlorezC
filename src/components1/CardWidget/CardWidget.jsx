@@ -1,13 +1,17 @@
 
-import Logo from "../../img/logo.jpg"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';
+import React, { Component }  from 'react';
 
 export const CardWidget  = () =>{
 
     return(
         <div>
-            <img src= {Logo} alt="iconoCarrito" />
+            <FontAwesomeIcon icon = {faCoffee}/>
             <span>5</span>
         </div>
        
     )
 }
+
+export default CardWidget

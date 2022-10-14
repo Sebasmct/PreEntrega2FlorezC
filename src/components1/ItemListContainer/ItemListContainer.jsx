@@ -1,5 +1,6 @@
 
 import "./ItemListContainer.css";
+import React, { Component }  from 'react';
 
 export const ItemListContainer = ()=>{
     return(
@@ -8,3 +9,6 @@ export const ItemListContainer = ()=>{
         </div>
     )
 }
+
+
+export default ItemListContainer
