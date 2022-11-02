@@ -1,0 +1,19 @@
+.page-contact{
+    display: grid;
+    background-color: grey;
+    padding: 10px;
+    font-size: 30px;
+    margin-top: 2%;
+    justify-items: center;
+   
+}
+
+img{
+    max-width: 70%;
+    max-height: 70%;  
+}
+
+.img-redes{
+    width: 300px;
+    height: 300px;
+}

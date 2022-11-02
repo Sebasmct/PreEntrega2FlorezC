@@ -1,0 +1,112 @@
+
+
+export const productos = [
+    {
+        id: 1,
+        image: "https://www.lg.com/co/images/neveras/md07538445/gallery/GB41WPT_1100-13.jpg",
+        title: "Nevera LG XXL",
+        descripcion: "Neveras de 4 litros y varios compartimientos",
+        precio: 500,
+        category: "Electrodomesticos",
+    },
+    {
+        id: 2,
+        image: "https://styka.com.co/wp-content/uploads/2021/01/Sala-en-L-Cali-A-1.jpg",
+        title: "Sala Gris",
+        descripcion: "Sala de 4 puestos de color gris y material cuero",
+        precio: 5000,
+        category: "Muebles",
+    },
+    {
+        id: 3,
+        image: "https://cdn.forbes.co/2020/11/Xiaomi-1280x720-JPG.jpg",
+        title: "Xiaomi Note 11",
+        descripcion: "Equipado con cámara de 108mpx, memoria ram de 8gb, almacenamiento de 128gb",
+        precio: 1800,
+        category: "Tecnologia",
+    },
+    {
+        id: 4,
+        image: "https://conectamos.shop/wp-content/uploads/2021/12/xiaomi_12_lite_negro_01_l-1.jpg",
+        title: "Xiaomi Note 12",
+        descripcion: "Equipado con cámara de 108mpx, memoria ram de 8gb, almacenamiento de 128gb",
+        precio: 1800,
+        category: "Tecnologia",
+    },
+    {
+        id: 5,
+        image: "https://hacebco.vteximg.com.br/arquivos/ids/168845-800-800/7704353355734_1.jpg?v=637698270616700000",
+        title: "Estufa de cuatro puestos",
+        descripcion: "Estufa con horno calentador, encendedor electrico y control de temperatura",
+        precio: 5500,
+        category: "Electrodomesticos",
+    },
+
+    {
+        id: 6,
+        image: "https://hogaruniversal.vtexassets.com/arquivos/ids/163859/L95850_PLANCHA-VAPOR-ESENCIAL---1.jpg?v=637642138011900000",
+        title: "Plancha",
+        descripcion: "Con base en platino, control de temperatura, varios modos de uso",
+        precio: 52000,
+        category: "Electrodomesticos",
+    },
+
+    {
+        id: 7,
+        image: "https://res.cloudinary.com/walmart-labs/image/upload/v1582563397/mg/images/categorias/d-electrodomesticos/f-electrodomesticos-licuadoras.jpg",
+        title: "Licuadora",
+        descripcion: "Control de velocidad, bajo consumo de energia",
+        precio: 2800,
+        category: "Electrodomesticos",
+    },
+    {
+        id: 8,
+        image: "data:image/jpeg;base64,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",
+        title: "Silla gris",
+        descripcion: "Confortable y flexible",
+        precio: 3000,
+        category: "Muebles",
+    },
+    {
+        id: 9,
+        image: "https://www.fullhogar.com.co/wp-content/uploads/2020/10/muebles-gumar-sala-click-clack.jpg",
+        title: "Sala familiar",
+        descripcion: "Tamaño xxl con varios compartimientos",
+        precio: 15000,
+        category: "Muebles",
+    },
+    {
+        id: 10,
+        image: "https://falabella.scene7.com/is/image/FalabellaCO/4084115_1?wid=800&hei=800&qlt=70",
+        title: "Sofa Azul",
+        descripcion: "Comodo con reposa pies y brazos",
+        precio: 24500,
+        category: "Muebles",
+    },
+
+    {
+        id: 11,
+        image: "https://exitocol.vtexassets.com/arquivos/ids/14534783/Computador-Portatil-HP-AMD-Ryzen-7-5700U-16-GB-512-GB-SSD-15-ef2500la-3210380_a.jpg?v=637984169050900000",
+        title: "Computador HP",
+        descripcion: "Pantalla de 14', memoria de 128gb ssd, memoria ram de 16gb",
+        precio: 7000,
+        category: "Tecnologia",
+    },
+    {
+        id: 12,
+        image: "https://s1.eestatic.com/2021/12/03/actualidad/631948900_217191977_1024x576.jpg",
+        title: "Tablet 7' ",
+        descripcion: "Display de 7', memoria ram de 8gb, almacenamiento de 128gb'",
+        precio: 1000,
+        category: "Tecnologia",
+    },
+    {
+        id: 13,
+        image: "https://www.claroshop.com/medios-plazavip/swift/v1/c/celulares/img/Categorias/DESBLOQUEADOS_CELULARES_1240x1034_jpg_69q.jpg",
+        title: "Iphone 12",
+        descripcion: "Cámara de 12mpx, bateria de 250mAh, almacenamiento de 128gb",
+        precio: 2200,
+        category: "Tecnologia",
+    },
+
+];

@@ -1,11 +1,19 @@
 
-import React, { Component } from 'react';
+import React from "react"
+import "./ContactoPage.css"
+
 export const ContactoPage = () =>{
     return(
-        <div style={{background: "pink", height: "100px"}}>
-            <p>pagina de contacto</p>
+        <div className="page-contact">
+            <p>Sebastian Florez</p>
+            <p>Tel 305777771</p>
+                <div className="img-redes">
+                    <img src= "" alt="" />
+                </div>
         </div>
     )
 }
+
+
 
 

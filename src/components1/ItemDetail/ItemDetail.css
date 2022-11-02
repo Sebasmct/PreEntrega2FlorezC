@@ -1,0 +1,14 @@
+.detalle {
+    display: block;
+    width: 50%;
+    justify-content: center;
+    margin-left: 25%;
+    background-color: rgb(211, 221, 218);
+}
+
+.detalle-img {
+    margin-top: 30px;
+    width: 30%;
+    height: 30%;
+    object-fit: cover;
+}

@@ -1,7 +1,7 @@
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCoffee } from '@fortawesome/free-solid-svg-icons';
-import React, { Component }  from 'react';
+import React from 'react';
 
 export const CardWidget  = () =>{
 
@@ -14,4 +14,3 @@ export const CardWidget  = () =>{
     )
 }
 
-export default CardWidget
