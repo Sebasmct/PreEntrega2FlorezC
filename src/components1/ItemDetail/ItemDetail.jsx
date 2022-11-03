@@ -1,12 +1,16 @@
 import "./ItemDetail.css"
 import React from "react";
 import ItemCount from "../ItemCount/ItemCount";
+import { useContext } from "react";
+import { CartContext } from "../../context/CartContext";
 
 
-export const ItemDetail = ({data}) =>{
+export const ItemDetail = ({ data }) => {
+    const { addProducts } = useContext(CartContext)
 
-    const onAdd = (cantidad) => {
-        console.log(`compraste ${cantidad} unidades`);
+    const agregarProducto = (cantidad) => {
+        console.log(cantidad);
+        addProducts(data, cantidad);
     }
 
     return (
@@ -16,10 +20,10 @@ export const ItemDetail = ({data}) =>{
                 <h1>{data.title}</h1>
                 <h2>{data.precio}</h2>
                 <p>{data.descripcion}</p>
-                <ItemCount initial={1} stock={5} onAdd={onAdd} />
+                <ItemCount initial={1} stock={5} onAdd={agregarProducto} />
             </div>
         </div>
-        
+
     );
 }
 

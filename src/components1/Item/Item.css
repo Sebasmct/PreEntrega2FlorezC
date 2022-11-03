@@ -14,5 +14,9 @@
     width:150px;
     height:30px;
     font-size:15px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
     background-color: rgba(187, 187, 235, 0.603);
+    border-radius: 10px;
 }
+
+

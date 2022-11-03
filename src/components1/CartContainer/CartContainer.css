@@ -1,0 +1,27 @@
+
+.carrito{
+    width: 800px;
+    height: 500px;
+    background-color: rgb(226, 226, 228);
+    border-color: 1px solid black;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+.tarjeta{
+    border: 1px solid black;
+    background-color: rgb(224, 228, 233);
+    border-radius: 20px;
+}
+
+.text-carrito{
+    font-size: 35px;
+    
+}
+
+.tarjeta-2{
+    border: 1px solid black;
+    background-color: rgb(166, 219, 187);
+    border-radius: 20px;
+}

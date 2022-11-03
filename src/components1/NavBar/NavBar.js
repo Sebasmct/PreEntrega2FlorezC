@@ -2,7 +2,6 @@ import "./NavBar.css";
 import logo from "./logo4.png";
 import {Link, NavLink } from "react-router-dom";
 import {CardWidget} from "../CardWidget/CardWidget";
-import React, { Component }  from 'react';
 export const NavBar = () =>{
     return(
         <nav className="nav-container">
@@ -16,8 +15,16 @@ export const NavBar = () =>{
                 'claseInactiva'} to = "Tienda/Muebles">Muebles</NavLink>
                 <NavLink className={({isActive})=>isActive === true ? 'claseActiva':
                 'claseInactiva'} to = "Tienda/Tecnologia">Tecnología</NavLink>
-                <CardWidget/>
+
+                <div className="cart">
+               
+                    <Link to ="/cart">
+                        <CardWidget/>
+                    </Link>
+               </div>
+        
             </div>
+     
 
         </nav>
     )
