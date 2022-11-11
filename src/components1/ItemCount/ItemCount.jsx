@@ -1,6 +1,6 @@
 import "./ItemCount.css";
 import React, { useState, useEffect } from "react";
-
+import swal from 'sweetalert2';
 
 export const ItemCount = ({ initial, stock, onAdd }) => {
 
@@ -19,6 +19,16 @@ export const ItemCount = ({ initial, stock, onAdd }) => {
         setContador(parseInt(initial));
     }, [initial])
 
+
+    const mostrarAlerta = () => {
+        swal.fire({
+          icon: 'success',
+          title: 'Se añadio el producto!',
+          text: 'Consulte su carrito de compras',
+        })
+      }
+      console.log(contador)
+
     return (
         <div className="contador">
             <button disabled={contador <= 1} className="disminuir btn btn-dark btn-sm " onClick={disminuir}>-</button>
@@ -26,8 +36,15 @@ export const ItemCount = ({ initial, stock, onAdd }) => {
             <button disabled={contador >= stock} className="aumentar btn btn-dark btn-sm " onClick={aumentar}>+</button>
 
             <div>
-                <button disabled={stock <= 0} onClick={() => onAdd(contador)} className="agregar btn btn-dark btn-sm">Agregar al Carrito</button>
+                <button disabled={stock <= 0} onClick={() => {
+                    onAdd(contador);
+                    mostrarAlerta();
+                }} 
+                    
+                    className="agregar btn btn-dark btn-sm">Agregar al Carrito</button>
             </div>
+
+     
 
         </div>
     )

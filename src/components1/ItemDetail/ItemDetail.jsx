@@ -4,7 +4,6 @@ import ItemCount from "../ItemCount/ItemCount";
 import { useContext } from "react";
 import { CartContext } from "../../context/CartContext";
 
-
 export const ItemDetail = ({ data }) => {
     const { addProducts } = useContext(CartContext)
 
@@ -14,7 +13,7 @@ export const ItemDetail = ({ data }) => {
     }
 
     return (
-        <div className="detalle container-fluid container-xxl">
+        <div className="detalle-container-fluid container-xxl">
             <img src={data.image} alt="" />
             <div>
                 <h1>{data.title}</h1>
@@ -23,7 +22,6 @@ export const ItemDetail = ({ data }) => {
                 <ItemCount initial={1} stock={5} onAdd={agregarProducto} />
             </div>
         </div>
-
     );
 }
 
