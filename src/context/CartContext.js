@@ -22,8 +22,8 @@ export const CartProvider = ({ children }) => {
             const posProduct = productosCarritoCopy.findIndex((elemento)=>elemento.id === data.id)
 
             productosCarritoCopy[posProduct].quantity += quantity;
-            productosCarritoCopy[posProduct].quantityPrice = productosCarritoCopy;
-            //[posProduct].quantity * productosCarritoCopy[posProduct].precio;
+            productosCarritoCopy[posProduct].quantityPrice = productosCarritoCopy[posProduct].quantity*
+            productosCarritoCopy[posProduct].precio;
             setproductosCarrito(productosCarritoCopy); 
         } else {
 
