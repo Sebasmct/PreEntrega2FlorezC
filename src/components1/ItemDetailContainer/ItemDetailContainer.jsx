@@ -43,6 +43,7 @@ export const ItemDetailContainer = () => {
                     <p> Cargando</p>
                     :
                     <ItemDetail data={data} />
+
                 }
 
             </div>
